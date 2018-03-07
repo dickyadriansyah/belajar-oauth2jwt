@@ -1,0 +1,56 @@
+server:
+  port: 10000
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/OctopusDB
+    username: dicky_user
+    password:
+    schema: octo_test
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-uri: -----BEGIN RSA PRIVATE KEY-----
+                MIIEogIBAAKCAQEAtryOttO5wYPoibBiND9Izh/vuzGL1ba/u3oWNQVNocXOZC70
+                ttbrAJA9hJq5JluIfIw532310F3c40TKHuMJQN18eJjV4FNm2uk/r7E97vpUhfYB
+                +F/zBdr4jMn3ttSzPRLsvqm5UWgeqKNiGq4ljMFlNXZabdP40YjwPsJ2i/5HgKUv
+                gGyGKgc+XL3M/v9nYd1K4Pj2gUXlBzjqP/klK9m5hF39rv9cfxvTGj9r7isWy3XN
+                BR1PH27KRajOWmQp6udUhpElzJXpJRwnc+dAtfFn3VuUH4YoN9dUO3aYJjOPBM5n
+                0NVYcQgCBRW0GqzGroSz1ESoSSExkrsaA7wldwIDAQABAoIBAFypIHT0x6ypBrFL
+                D4EO1gwvhZCWfyHPmUmnjrs0BTmS5CVI6i4MrP2MJqWnD1uz7nG5aV8ykwMllWxo
+                5VTkKz0JEqTUWx91KyK2Q+UDKzSTG2kSZc1cWg8OChraDxJWqMy/W+0SgzYUZfd9
+                YbHFvKSzLG7/pLssUW9u0OQCF7rESiLppU/Af2B8igO5hYn4A6QFX22ikK+s7raw
+                kT7wGZlrX2A1uHHCgaHAuw2BNRatBSwqDdvZZt1h77BLm5XsbpMnrWs1gsJDC9gk
+                lQltp1npng6wjX2zEr2mAb6cfjI/Ssm2B0iC9x55MEwzDBnO/A2okR/O1H/haBs7
+                aZh6qgECgYEA5V+8w5e+alk2/rvetU8DVY1QumBcaZKQZRaV9ZfJr+zJiM+tdhxB
+                As729z7YfpcZeUbZrVJE7IqyPDuFQJFF4zbaEBAHrUv5GMYVMLc3xVxgR/lxFBM4
+                wVpSYiNepviiAKceL2wSOnOTpMgnposF1nRnMfFgnVsd1nx+2q/IaCcCgYEAy/Ln
+                nl71ufGhdEGRfnR4stTZcuXpWeNDv4LyBim3OAnm9JdwXtdvcPNMsdc9flmkEuiy
+                2UZTP8VatpK9xvbIs+kA0HVIKVAg9SNeX4TUk1OFG4Mr+lSGdyEeZwb5hdU23Q5t
+                5s9r+prZMi48oCKcC/w0sEnunAKspW9x03M52jECgYBMBKayzB+3b0nisrDktgMM
+                34DZxAXcl05zskCQ3HVjcL56MRn0AvkozR7cYl+t1LYEk46g+psNKgpYHAHVnE/l
+                NdCfcjCZJoyvwTZUpuQ87JicQfdQB+7PZffXvpEoFU7bmIdQgCiqZpOQESXS9FBC
+                +uEYlD7I5+HDrA7+uzNYEQKBgD5+lj7PNljeE+090kl/gyS5WFB+5vxmSXI7u9Hr
+                onsHfb/hT8ugFEP2KcAtBmjbKw2oRHWTuRrHbL6ZRJHdOS737QnzhkMyjIbRaa+3
+                UjQ62YTOswEoOXPzsA898ePyq7cdHswlLx9Bp+BajrU7Jbn+dF64qOchYqnm9mgm
+                3MlhAoGAHBO1kpAYx8SRKa1oyWt3o4pDJLGs/XEPZ62RTPa9+Yry8M+PpLeXRcQd
+                xuZB7W4fEas6NbKIPV1bxQaZ2XJMPhO7egiVGaOActWUuLvOAnqypaiuemxQsNca
+                br1fR5KU+68B2ubA+WI5Bn/rsZraEQ/n4VOcMv340Hj0vsR84zc=
+                -----END RSA PRIVATE KEY-----
+        key-value: -----BEGIN PUBLIC KEY-----
+                   MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtryOttO5wYPoibBiND9I
+                   zh/vuzGL1ba/u3oWNQVNocXOZC70ttbrAJA9hJq5JluIfIw532310F3c40TKHuMJ
+                   QN18eJjV4FNm2uk/r7E97vpUhfYB+F/zBdr4jMn3ttSzPRLsvqm5UWgeqKNiGq4l
+                   jMFlNXZabdP40YjwPsJ2i/5HgKUvgGyGKgc+XL3M/v9nYd1K4Pj2gUXlBzjqP/kl
+                   K9m5hF39rv9cfxvTGj9r7isWy3XNBR1PH27KRajOWmQp6udUhpElzJXpJRwnc+dA
+                   tfFn3VuUH4YoN9dUO3aYJjOPBM5n0NVYcQgCBRW0GqzGroSz1ESoSSExkrsaA7wl
+                   dwIDAQAB
+                    -----END PUBLIC KEY-----
